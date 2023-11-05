@@ -1,9 +1,6 @@
 class Solution:
     def divisorGame(self, n: int) -> bool:
-        if n == 1:
-            return False
-        flag = self.divisorGame(n - 1)
-        if flag == False:
+        if n % 2 == 0:
             return True
         else:
             return False
